@@ -1,0 +1,42 @@
+{
+  "name": "redbox-api",
+  "description": "JS API into http://developer.redbox.com/",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sparty02/redbox-api",
+  "bugs": "https://github.com/sparty02/redbox-api/issues",
+  "license": "MIT",
+  "main": "lib/redbox-api.js",
+  "author": {
+    "name": "Ryan Dunckel",
+    "email": "sparty02@gmail.com",
+    "url": "http://me.sparty02.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sparty02/redbox-api"
+  },
+  "keywords":[],
+  "dependencies": {
+    "lodash": "2.4.1",
+    "q": "1.1.2",
+    "debug": "2.1.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-util": "^3.0.1",
+    "gulp-bump": "^0.1.11",
+    "gulp-jscs": "^1.1.2",
+    "gulp-jshint": "^1.8.4",
+    "gulp-mocha": "^1.1.0",
+    "gulp-istanbul": "^0.3.0",
+    "coveralls": "^2.11.1",
+    "should": "^4.0.4",
+    "jshint-stylish": "^0.4.0",
+    "gulp-load-plugins": "^0.6.0",
+    "gulp-plumber": "^0.6.5"
+  },
+  "scripts": {
+    "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "test": "gulp test"
+  }
+}
